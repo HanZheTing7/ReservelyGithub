@@ -1,0 +1,70 @@
+[debug] [2025-07-15T07:20:30.634Z] ----------------------------------------------------------------------
+[debug] [2025-07-15T07:20:30.635Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zheti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-07-15T07:20:30.635Z] CLI Version:   14.10.1
+[debug] [2025-07-15T07:20:30.636Z] Platform:      win32
+[debug] [2025-07-15T07:20:30.636Z] Node Version:  v22.17.0
+[debug] [2025-07-15T07:20:30.636Z] Time:          Tue Jul 15 2025 15:20:30 GMT+0800 (Malaysia Time)
+[debug] [2025-07-15T07:20:30.636Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-15T07:20:30.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T07:20:30.749Z] > authorizing via signed-in user (zheting7@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\zheti\AndroidStudioProjects\Reservely
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-15T07:20:37.203Z] Using project from CLI flag: reservely-d3b71
+[debug] [2025-07-15T07:20:37.204Z] Checked if tokens are valid: false, expires at: 1752507894085
+[debug] [2025-07-15T07:20:37.204Z] Checked if tokens are valid: false, expires at: 1752507894085
+[debug] [2025-07-15T07:20:37.205Z] > refreshing access token with scopes: []
+[debug] [2025-07-15T07:20:37.207Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-15T07:20:37.207Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-15T07:20:37.355Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-15T07:20:37.355Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-15T07:20:37.359Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reservely-d3b71 [none]
+[debug] [2025-07-15T07:20:37.704Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reservely-d3b71 200
+[debug] [2025-07-15T07:20:37.704Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reservely-d3b71 {"projectId":"reservely-d3b71","projectNumber":"359731266361","displayName":"Reservely","name":"projects/reservely-d3b71","resources":{"hostingSite":"reservely-d3b71"},"state":"ACTIVE","etag":"1_967d0edd-c356-4d42-95cf-3592799933a3"}
+[info] i  Using project reservely-d3b71 (Reservely) 
+[info] 
+=== Functions Setup
+[debug] [2025-07-15T07:20:37.707Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T07:20:37.707Z] > authorizing via signed-in user (zheting7@gmail.com)
+[debug] [2025-07-15T07:20:37.707Z] [iam] checking project reservely-d3b71 for permissions ["firebase.projects.get"]
+[debug] [2025-07-15T07:20:37.708Z] Checked if tokens are valid: true, expires at: 1752567636355
+[debug] [2025-07-15T07:20:37.708Z] Checked if tokens are valid: true, expires at: 1752567636355
+[debug] [2025-07-15T07:20:37.708Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reservely-d3b71:testIamPermissions [none]
+[debug] [2025-07-15T07:20:37.708Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reservely-d3b71:testIamPermissions x-goog-quota-user=projects/reservely-d3b71
+[debug] [2025-07-15T07:20:37.708Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reservely-d3b71:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-07-15T07:20:38.841Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reservely-d3b71:testIamPermissions 200
+[debug] [2025-07-15T07:20:38.842Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reservely-d3b71:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] functions.codebase must be unique but 'default' was used more than once.

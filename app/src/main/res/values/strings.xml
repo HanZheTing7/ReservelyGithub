@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reservely</string>
+    <string name="your_web_client_id">359731266361-md57o2gaqirnkockr1vm2sqka2qb6vge.apps.googleusercontent.com</string>
+    <string name="title_activity_channel">ChannelActivity</string>
+</resources>
