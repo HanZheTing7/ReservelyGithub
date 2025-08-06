@@ -1,7 +1,7 @@
 # RESERVELY
 
 ## Project Description
-This is a portfolio project showcasing my skills in modern Android development. The application demonstrates the use of a clean architecture and integrates with several key third-party services to deliver a robust and feature-rich user experience. It's built with Kotlin, Jetpack Compose, and a MVVM architectural pattern.
+This is a portfolio project showcasing my skills in modern Android development. The application integrates with several key third-party services to deliver a robust and feature-rich user experience. It's built with Kotlin, Jetpack Compose, and a MVVM architectural pattern.
 
 ## Features
 User Authentication: Secure user registration and login using Firebase Authentication.
